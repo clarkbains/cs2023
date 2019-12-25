@@ -1,0 +1,110 @@
+*{ 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+body {
+    background-color: #333;
+}
+
+div.header {
+    background-image: repeating-linear-gradient(0deg, #333 0px,#333 2px,#FF7F27cc 2px,#FF7F27cc 4px);
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+    div.header .bar {
+        background-color: #FF7F27;
+        width: 100%;
+        height: 30%;
+        position: absolute;
+	bottom: 0; 
+        display: inline-flex;
+    }
+
+        div.header .bar a.logo {
+            width: 5%;
+            margin-left: 5%;
+            margin-top: -1%;
+            background-color: #FF7F27;
+            background-image: url("/res/logo.png");
+            image-rendering: optimizequality;
+            background-size: cover;
+            margin-right: 1%;
+            box-shadow: 0px 0px 0px 5px #333;
+            flex-shrink: 0;
+            padding-bottom: 5%;
+            transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+        }
+
+            div.header .bar a.logo:hover {
+                filter: blur(0.5px);
+                background-color: #fff;
+                box-shadow: 0px 0px 5px 0px #fff, 0px 0px 0px 5px #333;
+            }
+
+        div.header .bar a.sub {
+            color: #333;
+            height: 100%;
+            align-self: center;
+            padding: 0px 15px 0px 15px;
+            align-items: center;
+            display: flex;
+            transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+        }
+
+        div.header .bar a.sub:hover {
+            filter: blur(0.25px);
+            color: #FF7F27;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px #fff;
+        }
+
+div.main_page {
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    margin-top: 10%;
+    margin-left: 25%;
+    text-align: justify;
+    display: block;
+    position: relative;
+}
+
+div.overlay {
+    height: 10%;
+    vertical-align: center;
+    background-color:  #FF7F27;
+    width: 100%;
+    opacity: 0.5;
+    position: fixed;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    margin-top: 25%;
+}
+
+div.clarker {
+    height: 10%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FF7F27;
+}
