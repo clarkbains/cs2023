@@ -3,6 +3,11 @@ function encode (inID, outID) {
     var outElm = document.getElementById(outID);
     outElm.value = encodeURIComponent(inElm.value)
 }
+function decode (inID, outID) {
+    var inElm = document.getElementById(inID)
+    var outElm = document.getElementById(outID);
+    outElm.value = decodeURIComponent(inElm.value)
+}
 function copy (elmID) {
     textarea = document.createElement('textarea')
     textarea.textContent =  document.getElementById(elmID).value;

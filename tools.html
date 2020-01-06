@@ -11,9 +11,9 @@
 </head>
 <noscript>Please Enable Javascript to use these Tools</noscript>
 <body>
-    <h5 class="card-title">Url Encoder</h5>
+    
     <div class="card" style="margin: 10px;">
-
+        <h5 class="card-title">Url Encoder</h5>
         <p class="card-text">Encodes Given text using percent encoding</p>
         <div class="input-group">
             <textarea type="text" class="input-group-text" id="encodeInput"
@@ -26,7 +26,20 @@
             <button type="button" class="btn btn-secondary adjacent" onclick="copy('encodeOutput')">Copy</button>
         </div>
     </div>
-
+    <div class="card" style="margin: 10px;">
+        <h5 class="card-title">Url Decoder</h5>
+        <p class="card-text">Decode Given text using percent encoding</p>
+        <div class="input-group">
+            <textarea type="text" class="input-group-text" id="decodeInput"
+                style="flex-grow: 100;text-align:left"></textarea>
+            <textarea disabled type="text" class="input-group-text" id="decodeOutput"
+                style="flex-grow: 100;text-align:left"></textarea>
+        </div>
+        <div class="input-group">
+            <button type="button" class="btn btn-primary adjacent" onclick="decode('decodeInput', 'decodeOutput')" id="btn decode">Convert</button>
+            <button type="button" class="btn btn-secondary adjacent" onclick="copy('decodeOutput')">Copy</button>
+        </div>
+    </div>
 </body>
 
 <script src="tools.js">
